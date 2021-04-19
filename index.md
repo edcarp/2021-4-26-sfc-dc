@@ -332,7 +332,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 </tr>
 <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/r-socialsci/">Data Analysis in R</a></td></tr>
 </table>
-</div></div>
+</div>
 
 <div class="col-md-6">
 <h3>Day 2</h3>
