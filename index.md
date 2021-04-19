@@ -334,94 +334,58 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% comment %}
 SCHEDULE
 
-Show the workshop's schedule.
-
-Small changes to the schedule can be made by modifying the
-`schedule.html` found in the `_includes` folder for your
-workshop type (`swc`, `lc`, or `dc`). Edit the items and
-times in the table to match your plans. You may also want to
-change 'Day 1' and 'Day 2' to be actual dates or days of the
-week.
-
-For larger changes, a blank template for a 4-day workshop
-(useful for online teaching for instance) can be found in
-`_includes/custom-schedule.html`. Add the times, and what
-you will be teaching to this file. You may also want to add
-rows to the table if you wish to break down the schedule
-further. To use this custom schedule here, replace the block
-of code below the Schedule `<h2>` header below with
-`{% include custom-schedule.html %}`.
-{% endcomment %}
-
 <h2 id="schedule">Schedule</h2>
+<div class="row">
+<div class="col-md-6">
+<h3>Day 1</h3>
+<table class="table table-striped">
+<tr>
+<td>Before starting</td>
+<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+</tr>
+<tr><td>Morning</td> <td> <a href=" https://datacarpentry.org/r-socialsci/">Data Analysis in R</a></td></tr>
+</table>
+</div>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% endif %}
+
+<!--div class="row"-->
+<div class="col-md-6">
+<h3>Day 2</h3>
+<table class="table table-striped">
+<tr>
+<tr><td>Morning</td> <td><a href="https://datacarpentry.org/r-socialsci/">Continuation of Data Analysis in R</a></td></tr>
+</tr>
+</table>
+</div>
+
+<!--div class="row"-->
+<div class="col-md-6">
+<h3>Day 2</h3>
+<table class="table table-striped">
+<tr>
+<tr><td>Morning</td> <td> <a href="https://librarycarpentry.org/lc-data-intro/">Working with Data: Regular Expressions</a></td></tr>
+</tr>
+</table>
+</div>
+	
+<div class="col-md-6">
+<h3>Day 3</h3>
+<table class="table table-striped">
+<tr> <td>Morning</td>
+<td>
+
+  <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/sql-socialsci/">Data Management with SQL</a></td></tr>
+</td>
+</tr>
+<td>Follow-up</td><td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+</table>
+</div>
+</div>
 
 <hr/>
 
 
-{% comment %}
 SETUP
 
-Delete irrelevant sections from the setup instructions.  Each
-section is inside a 'div' without any classes to make the beginning
-and end easier to find.
-
-This is the other place where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
-
-<h2 id="setup">Setup</h2>
-
-<p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
-</p>
-<p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
-
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
-
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instrucctions.
-{% endcomment %}
-{% if online != "false" %}
-{% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
-These are the installation instructions for the tools used
-during the workshop.
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% endif %}
+The directions for installing and setting up the required software can be found 
+<a href = "https://edcarp.github.io/2021-4-26-sfc-dc/setup/setup.html">by following this link</a>.
