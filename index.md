@@ -320,7 +320,6 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 
 <hr/>
 
-SCHEDULE
 
 <h2 id="schedule">Schedule</h2>
 <div class="row">
@@ -333,7 +332,7 @@ SCHEDULE
 </tr>
 <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/r-socialsci/">Data Analysis in R</a></td></tr>
 </table>
-</div>
+</div></div>
 
 <div class="col-md-6">
 <h3>Day 2</h3>
@@ -342,7 +341,7 @@ SCHEDULE
 <tr><td>Morning</td> <td><a href="https://datacarpentry.org/r-socialsci/">Continuation of Data Analysis in R</a></td></tr>
 </tr>
 </table>
-</div>
+</div></div>
 
 <div class="col-md-6">
 <h3>Day 3</h3>
@@ -353,7 +352,7 @@ SCHEDULE
 </tr>
 </tr>
 </table>
-</div>
+</div></div>
 	
 <div class="col-md-6">
 <h3>Day 4</h3>
