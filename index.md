@@ -330,8 +330,6 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 
 <hr/>
 
-
-{% comment %}
 SCHEDULE
 
 <h2 id="schedule">Schedule</h2>
