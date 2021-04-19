@@ -343,6 +343,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 </table>
 </div></div>
 
+<div class="row">
 <div class="col-md-6">
 <h3>Day 3</h3>
 <table class="table table-striped">
@@ -352,7 +353,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 </tr>
 </tr>
 </table>
-</div></div>
+</div>
 	
 <div class="col-md-6">
 <h3>Day 4</h3>
