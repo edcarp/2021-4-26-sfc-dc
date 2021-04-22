@@ -372,7 +372,8 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <hr/>
 
 
-SETUP
+
+<h2 id="schedule">Setup</h2>
 
 The directions for installing and setting up the required software can be found 
 <a href = "https://edcarp.github.io/2021-4-26-sfc-dc/setup/setup.html">by following this link</a>.
